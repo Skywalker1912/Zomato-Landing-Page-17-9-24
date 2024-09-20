@@ -3,4 +3,4 @@
 
 # Done with first commit
 
-# Setup created for our application
+# Set up created for our application
