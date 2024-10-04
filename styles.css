@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+}
+.hero__section{
+    background-image:url('foodherobg.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    min-height:60vh;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:60px;
+    padding:16px 50px;
+}
+.navbar a{
+    color:white;
+    height:20px;
+    text-decoration:none;
+}
+.menu_container{
+    display:flex;
+    gap:20px;
+}
+.user_icon{
+    height:22px;
+    width:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:100%;
+    border: solid 1px white;
+    display:none;
+}
+
+@media only screen and (max-width:600px){
+    .user_icon{
+        display:flex;
+    }
+    .link{
+        display:none;
+    }
+    .hero__section{
+        min-height:80vh;
+    }
+}
