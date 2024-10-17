@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click to Open Dropdown</title>
+  <style>
+    /* Style for the dropdown container */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Huge button style with an arrow */
+    .dropdown-button {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 24px;
+      padding: 20px 40px;
+      border: none;
+      cursor: pointer;
+      width: 300px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Add a downward arrow next to the text */
+    .dropdown-button::after {
+      content: "▼"; /* Unicode for downward arrow */
+      font-size: 18px;
+      margin-left: 10px;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown content when the button or dropdown has focus */
+    .dropdown:focus-within .dropdown-content {
+      display: block;
+    }
+
+    /* Optional: Change button color when the dropdown is active */
+    .dropdown:focus-within .dropdown-button {
+      background-color: #3e8e41;
+    }
+
+    /* Remove button outline on focus */
+    .dropdown-button:focus {
+      outline: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="dropdown">
+    <button class="dropdown-button">Huge Dropdown</button>
+    <div class="dropdown-content">
+      <a href="#">Option 1</a>
+      <a href="#">Option 2</a>
+      <a href="#">Option 3</a>
+    </div>
+  </div>
+
+</body>
+</html>
+

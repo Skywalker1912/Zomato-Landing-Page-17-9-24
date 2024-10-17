@@ -4,6 +4,9 @@
     box-sizing:border-box;
     font-family:"Poppins", sans-serif;
 }
+
+/* Hero Section styles */
+
 .hero__section{
     background-image:url('heroSectionBackground.png');
     background-size:cover;
@@ -16,16 +19,18 @@
     align-items:center;
     justify-content:space-between;
     height:65px;
-    padding:50px 50px;
+    padding:30px 350px;
 }
 .navbar a{
     color:white;
     height:20px;
     text-decoration:none;
+    font-size:16px;
+    font-weight:320;
 }
 .menu_container{
     display:flex;
-    gap:20px;
+    gap:30px;
 }
 .user_icon{
     height:22px;
@@ -44,11 +49,12 @@
     align-items:center;
     justify-content:center;
     gap:20px;
-    height:350px;
+    height:400px;
 }
 .hero__section_logo{
-    width:300px;
+    width:290px;
     height:auto;
+    padding:10px;
 }
 .hero__section_title{
     text-align:center;
@@ -63,7 +69,7 @@
     align-items:center;
     justify-content:center;
     gap:10px;
-    width:50%;
+    width:45%;
     border-radius:8px;
 }
 .input_container_location,.input_container_search{
@@ -81,7 +87,7 @@
 
 
 @media only screen and (max-width:600px){
-    .navbar__menu_container .user_icon{
+    .navbar .menu_container .user_icon{
         display:flex;
     }
     .link{
@@ -111,10 +117,13 @@
     margin:3rem auto;
     width:90%;
 }
+
+/* We offer styles */
+
 .we__offer{
     display:flex;
     flex-wrap:wrap;
-    gap:0.5rem;
+    gap:0.6rem;
     align-items:center;
     justify-content:center;
 }
@@ -124,6 +133,7 @@
     border:1px solid #e0e0e0;
     transition: all 0.3s ease;
     margin-right:11px;
+    width:345px;
 }
 
 .we__offer_card:hover{
@@ -149,6 +159,9 @@
     font-weight:400;
     color:rgb(91, 90, 90);
 }
+
+/* Collections styles */
+
 .collections h1{
     font-weight:500;
     font-size:2rem;
@@ -168,8 +181,14 @@
     color:#ff7e8b;
     font-size:15px;
     cursor:pointer;
-    padding-right:218px;
+    padding-right:220px;
 }
+
+.sub_heading_container span:nth-child(2)::after{
+    color:#ff7e8b;
+    content: "→";
+}
+
 .collections_card_container{
     display:flex;
     align-items:center;
@@ -185,6 +204,7 @@
     background-position:center;
     border-radius:6px;
     position:relative;
+    cursor:pointer;
 }
 .card1{
     background-image:url('collections1.png');
@@ -226,10 +246,92 @@
     font-size:0.9rem;
     z-index:6;
 }
+.collections_card_container .card .content span::after{
+    content: "→";
+    padding-left:7px;
+    font-size:17px;
+}
+
 .content h4{
     font-weight:400;
     letter-spacing:0.5px;
 }
+
+/* Localities section */
+.localities{
+    margin-top:100px;
+}
+.localities h1{
+    padding-left:300px;
+    font-weight:400;
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the boxes horizontally */
+    gap: 20px; /* Gap between the boxes */
+    max-width:1100px; /* Optional: limit the total width of the boxes */
+    margin: 0 auto; /* Center the container on the page */
+  }
+  
+  /* Styling for each box */
+  .box {
+    flex: 1 1 calc(33.33% - 20px); /* 3 boxes per row, accounting for gap */
+    background-color: #ffffff; /* Box background color */
+    border: 1px solid #e1e1e1; /* Box border */
+    padding: 7px 15px; /* Padding inside the box */
+    box-sizing: border-box; /* Include padding in box width */
+    border-radius:7px;
+    cursor:pointer;
+    position:relative;
+  }
+
+  .box:hover {
+    box-shadow: 0 4px 8px rgba(89, 89, 89, 0.1);
+  }
+
+  .box h4{
+    font-size:20px;
+    font-weight:400;
+    display:inline-block;
+    margin-right:30px;
+  }
+
+  .box h4::after{
+    content: "→";          /* Adds a down arrow after the text */
+    font-size: 15px;
+    position:absolute;
+    right:25px;
+    top:50%;
+    transform:translateY(-50%);
+}
+  
+  /* Styling for text inside the box */
+  .box p {
+    margin: 0;
+    padding: 6px 0; /* Space between the lines of text */
+    font-weight:300;
+    font-size:1rem;
+  }
+  .box span{
+    text-align:center;
+    display:inline-block;
+    padding:20px 110px;
+    font-size:1rem;
+    font-weight:400;
+  }
+
+  .box span::after {
+    content: "▼";            /* Adds a down arrow after the text */
+    font-size: 13px;           /* Adjust size of the arrow */
+    margin-left: 10px;          /* Adds space between the text and the arrow */
+    vertical-align: middle;
+  }
+
+/* Get the App styles */
 .get_the_app{
     display:flex;
     align-items:center;
@@ -237,6 +339,7 @@
     background-color:rgb(255, 251, 247);
     width:100%;
     padding:3rem 6rem;
+    margin-top:100px;
 }
 .get_the_app .semiContainer{
     display:flex;
@@ -278,11 +381,11 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:5px;
+    gap:0.5rem;
 }
 .right .radio_button_container div input{
-    height:15px;
-    width:15px;
+    height:18px;
+    width:18px;
     accent-color:rgb(239,79,95);
 }
 
@@ -290,11 +393,11 @@
     flex-wrap:wrap;
 }
 
-.right .input-container{
+.right .input_container{
     display:flex;
-    gap:0.5rem;
+    gap:1rem;
 }
-.input_container button,input{
+.input_container button, .input_container input{
     padding:15px 15px;
     border-radius:7px;
 }
@@ -302,7 +405,9 @@
     flex:auto;
     border:0.5px solid #dad8d8;
     outline:none;
-    font-size:15px;
+    font-size:16px;
+    gap:1rem;
+    font-weight:350;
 }
 .input_container button{
     font-size:15px;
@@ -310,17 +415,18 @@
     border:none;
     background-color:rgb(239,79,95);
     cursor:pointer;
+    gap:1rem;
 }
 .input_container button:hover{
-    background-color:rgb(222, 56, 72)
+    background-color:rgb(222, 56, 72);
 }
 .right .download_app_container{
     display:flex;
     flex-direction:column;
-    gap:0.7rem
+    gap:0.7rem;
 }
 .right .download_app_container h5{
-    font-weight:400;
+    font-weight:300;
     color:gray;
     outline:none;
     border-radius:10px;
@@ -330,7 +436,7 @@
     gap:1rem;
 }
 .right .download_app_container div img{
-    width:26%;
+    width:30%;
     cursor:pointer;
 }
 @media only screen and (max-width:1300px){
@@ -352,46 +458,146 @@
     flex-direction:column;
     }
 }
+
+/* Explore section */
+.explore_container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding:30px 350px;
+    background-color:rgb(250, 249, 249);
+}
+
+.explore_container h1{
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    position: relative;
+    display: inline-block;
+    font-weight:400;
+    font-size:1.8rem;
+    padding: 20px 1px;
+    left:-35px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: flex;
+    justify-content: flex-start; 
+    position: relative; 
+    margin-bottom: 25px;
+    width:100%;
+    left:-35px;
+}
+
+.dropdown-button {
+    background-color:white;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 18px 30px;
+    border: solid 0.2px rgb(218, 218, 218);
+    cursor: pointer;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 7px;
+    outline: none; 
+
+}
+
+.dropdown-button::after {
+    content: "▼";
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color:white;
+    box-shadow: 0px 0px 0px 0px rgb(6, 6, 6);
+    z-index: 1;
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+    width: 100%; 
+    top: 100%; 
+    left: 0; 
+    padding: 10px 5px; 
+    box-sizing: border-box;
+    border: 0.2px solid rgb(218, 218, 218);
+}
+
+.dropdown-content a {
+    color:gray;
+    font-weight:300;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.raised-dot {
+    display: inline-block;
+    margin: 0 6px; /* Space around the dot */
+    vertical-align: super; /* Raise the dot slightly */
+    font-size: 2rem; 
+    color: gray; 
+}
+
+
+/* Footer Styles */
 .footer{
     width:100%;
 }
-.footer_section1{
+.footer_section{
     display:flex;
-    flex-wrap:flex;
+    flex-wrap:wrap;
     align-items:center;
-    justify-content:space-between;
+    justify-content:flex-start;
     width:80%;
     margin:auto;
+    padding-left:125px;
 }
-.footer_section1 img{
+.footer_section img{
     width:130px;
 }
-.section1_buttons{
-    display:flex;
-    gap:1rem;
+.footer_section, .section1_buttons{
+    gap:700px; /* Gap b/w the logo and 2 buttons */
+}
+.section1_buttons{ 
+    display:flex;     
+    gap:1rem; /* Gap between the two buttons */
 }
 .section1_buttons button{
-    padding:5px;
+    padding:8px 50px;
     width:90px;
-    border: 1px solid gray;
+    border: 1px solid rgb(184, 180, 180);
     border-radius:5px;
     background-color:transparent;
     display:flex;
     align-items:center;
     justify-content:center;
     cursor:pointer;
-    gap:12px;
+    gap:10px;
+    font-size:17px;
 }
 .nav_container{
     display:grid;
     grid-template-columns:repeat(5,1fr);
-    width:80%;
+    width:65%;
     margin:auto;
     gap:1rem;
     padding:3rem 0;
 }
 .nav_container .links img{
-    width:60%;
+    width:70%;
     cursor:pointer;
     padding:5px;
 }
@@ -403,8 +609,8 @@
 .links h5{
     font-weight:405;
     font-size:14.5px;
-    margin-bottom:5px;
-    letter-spacing:1.33px;
+    margin-bottom:6px;
+    letter-spacing:1.35px;
 }
 .footer_link{
     text-decoration:none;
@@ -434,7 +640,7 @@
     width:100%;
 }
 .disclaimer{
-    width:95%;
+    width:65%;
     color:black;
     margin:auto;
     border-top: 1px solid gray;
