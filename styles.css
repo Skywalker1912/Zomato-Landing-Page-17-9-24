@@ -8,7 +8,7 @@
 /* Hero Section styles */
 
 .hero__section{
-    background-image:url(./WebImages/heroSectionBackground.png);
+    background-image:url('./WebImages/heroSectionBackground.png');
     background-size:cover;
     background-position:center;
     color:white;
