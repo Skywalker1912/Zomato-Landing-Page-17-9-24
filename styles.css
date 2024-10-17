@@ -8,7 +8,7 @@
 /* Hero Section styles */
 
 .hero__section{
-    background-image:url('/WebImages/heroSectionBackground.png');
+    background-image:url('WebImages/heroSectionBackground.png');
     background-size:cover;
     background-position:center;
     color:white;
@@ -207,20 +207,20 @@
     cursor:pointer;
 }
 .card1{
-    background-image:url('/WebImages/collections1.png');
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url('/WebImages/collections1.png');
+    background-image:url('WebImages/collections1.png');
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url('WebImages/collections1.png');
 }
 .card2{
-    background-image:url('/WebImages/collections2.png');
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url('/WebImages/collections2.png');
+    background-image:url('WebImages/collections2.png');
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url('WebImages/collections2.png');
 }
 .card3{
-    background-image:url('/WebImages/collections3.png');
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url('/WebImages/collections3.png');
+    background-image:url('WebImages/collections3.png');
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url('WebImages/collections3.png');
 }
 .card4{
-    background-image:url('/WebImages/collections4.png');
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url('/WebImages/collections4.png');
+    background-image:url('WebImages/collections4.png');
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url('WebImages/collections4.png');
 }
 .overlay{
     width:100%;
